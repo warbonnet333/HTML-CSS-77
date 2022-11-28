@@ -4,49 +4,59 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Module 1.2</title>
+    <title>Module 2.1</title>
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;600&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Raleway:wght@700&display=swap"
       rel="stylesheet"
     />
+
+    <link rel="stylesheet" href="./style/style.css" />
+
+    <!-- <style>
+      h1 {
+        color: teal;
+      }
+    </style> -->
   </head>
 
   <body>
-    <header>
+    <header class="header">
       <nav>
         <a href="/">
           <img src="./img/logo.png" width="68" height="55" alt="logo" />
         </a>
-        <ul>
-          <li><a href="./about.html">About</a></li>
-          <li><a href="#section-2">Service</a></li>
-          <li><a href="#">Barbers</a></li>
-          <li><a href="#">Contacts</a></li>
+
+        <ul class="header-list list">
+          <li><a class="header-link link" href="./about.html">About</a></li>
+          <li><a class="header-link link" href="#section-2">Service</a></li>
+          <li><a class="header-link link" href="#">Barbers</a></li>
+          <li><a class="header-link link" href="#">Contacts</a></li>
         </ul>
       </nav>
 
-      <a href="tel:+11(000)1111111">+11 (000) 111-11-11</a>
-      <button type="button">Online-booking</button>
+      <a class="header-phone link" href="tel:+11(000)1111111"
+        >+11 (000) 111-11-11</a
+      >
+      <button class="header-btn btn" type="button">Online-booking</button>
     </header>
 
     <main>
-      <section>
-        <p>A hair salon for men in Kyiv</p>
-        <h1>BarberShop</h1>
-        <p>
+      <section class="hero">
+        <p class="hero-text__top">A hair salon for men in Kyiv</p>
+        <h1 class="hero-title">BarberShop</h1>
+        <p class="hero-text__bottom">
           We are experts in trendy men`s haircuts. We work quickly, carefully
           and with style.
         </p>
-        <address>
-          <ul>
-            <li><a href="#">Instagram</a></li>
-            <li><a href="#">Youtube</a></li>
-          </ul>
-        </address>
+        <ul class="hero-list list">
+          <li><a class="hero-link link" href="#">Instagram</a></li>
+          <li><a class="hero-link link" href="#">Youtube</a></li>
+        </ul>
       </section>
-
+<!--  -->
       <section id="section-2">
         <ul>
           <li>
