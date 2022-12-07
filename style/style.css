@@ -17,6 +17,10 @@
   padding: 0;
 }
 
+img {
+  display: block;
+}
+
 html {
   font-size: 20px;
 }
@@ -95,6 +99,22 @@ body {
 .header {
   padding-top: 32px;
   padding-bottom: 32px;
+  background: grey;
+}
+
+.header .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header nav {
+  display: flex;
+  align-items: center;
+}
+
+.header-logo {
+  margin-right: 130px;
 }
 
 .header-link {
@@ -104,10 +124,17 @@ body {
   letter-spacing: 0.1em;
   color: var(--color-light);
   text-decoration: none;
+  display: block;
 }
 
 .header-list {
   list-style: none;
+  display: flex;
+  align-items: center;
+}
+
+.header-list li {
+  margin: 0 15px;
 }
 
 .header-phone {
@@ -122,14 +149,26 @@ body {
 
 .header-btn {
   margin-left: 43px;
-  margin-right: 43px;
 }
 
 /* _________ HERO SECTION __________ */
 
 .hero {
   background: grey;
+  /* padding: 272px 100px 208px 0; */
+}
+
+.hero .container {
+  display: flex;
+}
+
+.hero-list {
+  width: 100px;
+}
+
+.hero-info {
   padding: 272px 100px 208px;
+  flex-grow: 1;
 }
 
 .hero-text__top {
@@ -175,10 +214,17 @@ body {
 .about {
   padding: 120px 0;
 }
-.about-gallery {
-  margin-bottom: var(--main-margin);
+
+.about .container {
+  display: flex;
 }
-.about-gallery-item {
+
+.about-gallery {
+  display: flex;
+  margin-right: 30px;
+}
+.about-gallery-item + .about-gallery-item {
+  margin-left: 30px;
 }
 
 .about-text-top {
@@ -242,10 +288,19 @@ body {
   color: var(--color-light);
   margin-bottom: 44px;
 }
+
+.service-wrap {
+  display: flex;
+}
+
 .service-list {
   padding: 30px 20px;
   background: linear-gradient(180deg, #171a24 0%, rgba(23, 26, 36, 0.2) 100%);
-  margin-bottom: 30px;
+  flex-grow: 1;
+}
+
+.service-list + .service-list {
+  margin-left: 30px;
 }
 
 .service-list-item {
@@ -254,6 +309,13 @@ body {
   line-height: calc(30 / 18);
   letter-spacing: 0.02em;
   color: #9da4bd;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.service-list-item:last-child {
+  margin-bottom: 0;
 }
 
 .service-btn {
@@ -372,10 +434,29 @@ body {
 .gallery-title {
 }
 .gallery-text-top {
+  margin-bottom: 44px;
 }
 .gallery-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -15px;
+  /* margin-left: -30px;
+  margin-bottom: -30px; */
 }
 .gallery-list-item {
+  /* margin-left: 30px;
+  margin-bottom: 30px; */
+  margin: 15px;
+  /* flex-basis: calc((100% / 4) - 30px); */
+  flex-basis: calc((100% - 120px) / 4);
+}
+
+.gallery-list-item img {
+  max-width: 100%;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
 }
 
 /* _________ BOOKING SECTION __________ */
@@ -457,3 +538,53 @@ body {
   color: var(--color-main);
   text-decoration: none;
 }
+
+.wrapper {
+  width: 800px;
+  height: 600px;
+  list-style: none;
+  outline: 1px solid red;
+  margin: 30px auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.wrapper li {
+  width: 100px;
+  height: 100px;
+}
+
+.wrapper li.one {
+  background: red;
+}
+.wrapper li.two {
+  background: green;
+}
+.wrapper li.three {
+  background: yellow;
+}
+.wrapper li.four {
+  background: pink;
+}
+
+/* .list-item:nth-child(3n + 4) {
+  background: red;
+} */
+
+/* an + b */
+
+/* 
+0
+3 * 0 + 4 = 0
+
+1
+3 * 1 + 4 = 7
+
+2
+3 * 2 + 4 = 10 
+....
+*/
+
+/* .list-item:nth-child(odd) {
+  background: tomato;
+} */

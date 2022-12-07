@@ -27,7 +27,7 @@
     <header class="header">
       <div class="container">
         <nav>
-          <a href="/">
+          <a class="header-logo" href="/">
             <img src="./img/logo.png" width="68" height="55" alt="logo" />
           </a>
 
@@ -39,26 +39,31 @@
           </ul>
         </nav>
 
-        <a class="header-phone link" href="tel:+11(000)1111111"
-          >+11 (000) 111-11-11</a
-        >
-        <button class="header-btn btn" type="button">Online-booking</button>
+        <div class="header-info">
+          <a class="header-phone link" href="tel:+11(000)1111111"
+            >+11 (000) 111-11-11</a
+          >
+          <button class="header-btn btn" type="button">Online-booking</button>
+        </div>
       </div>
     </header>
 
     <main>
       <section class="hero">
         <div class="container">
-          <p class="hero-text__top">A hair salon for men in Kyiv</p>
-          <h1 class="hero-title">BarberShop</h1>
-          <p class="hero-text__bottom hero-text">
-            We are experts in trendy men`s haircuts. We work quickly, carefully
-            and with style.
-          </p>
           <ul class="hero-list list">
             <li><a class="hero-link link" href="#">Instagram</a></li>
             <li><a class="hero-link link" href="#">Youtube</a></li>
           </ul>
+
+          <div class="hero-info">
+            <p class="hero-text__top">A hair salon for men in Kyiv</p>
+            <h1 class="hero-title">BarberShop</h1>
+            <p class="hero-text__bottom hero-text">
+              We are experts in trendy men`s haircuts. We work quickly,
+              carefully and with style.
+            </p>
+          </div>
         </div>
       </section>
 
@@ -84,20 +89,22 @@
             </li>
           </ul>
 
-          <p class="about-text-top text-top">About</p>
-          <h2 class="about-title">Best Barbershop in your city</h2>
-          <p class="about-description">
-            If you want to add more confidence to your image, you should
-            definitely visit us.
-          </p>
-          <p class="about-text-bottom">
-            We are a team that never stops at what has been achieved and are
-            thirsty for changes. And when you fall into the hands of our master,
-            you will never be the same again. We are a team that is always "on
-            the same wave" with clients. Therefore, we are always ready to
-            improve everyone who comes to us!
-          </p>
-          <button class="about-btn btn" type="button">Online-booking</button>
+          <div class="about-info">
+            <p class="about-text-top text-top">About</p>
+            <h2 class="about-title">Best Barbershop in your city</h2>
+            <p class="about-description">
+              If you want to add more confidence to your image, you should
+              definitely visit us.
+            </p>
+            <p class="about-text-bottom">
+              We are a team that never stops at what has been achieved and are
+              thirsty for changes. And when you fall into the hands of our
+              master, you will never be the same again. We are a team that is
+              always "on the same wave" with clients. Therefore, we are always
+              ready to improve everyone who comes to us!
+            </p>
+            <button class="about-btn btn" type="button">Online-booking</button>
+          </div>
         </div>
       </section>
 
@@ -108,42 +115,44 @@
           </p>
           <h2 class="service-title">Services and prices</h2>
 
-          <ul class="service-list list">
-            <li class="service-list-item">
-              <p>Men`s haircut</p>
-              <p>from 300 uah.</p>
-            </li>
-            <li class="service-list-item">
-              <p>Men`s haircut</p>
-              <p>from 300 uah.</p>
-            </li>
-            <li class="service-list-item">
-              <p>Men`s haircut</p>
-              <p>from 300 uah.</p>
-            </li>
-            <li class="service-list-item">
-              <p>Men`s haircut</p>
-              <p>from 300 uah.</p>
-            </li>
-          </ul>
-          <ul class="service-list list">
-            <li class="service-list-item">
-              <p>Men`s haircut</p>
-              <p>from 50 uah.</p>
-            </li>
-            <li class="service-list-item">
-              <p>Men`s haircut</p>
-              <p>from 50 uah.</p>
-            </li>
-            <li class="service-list-item">
-              <p>Men`s haircut</p>
-              <p>from 50 uah.</p>
-            </li>
-            <li class="service-list-item">
-              <p>Men`s haircut</p>
-              <p>from 50 uah.</p>
-            </li>
-          </ul>
+          <div class="service-wrap">
+            <ul class="service-list list">
+              <li class="service-list-item">
+                <p>Men`s haircut</p>
+                <p>from 300 uah.</p>
+              </li>
+              <li class="service-list-item">
+                <p>Men`s haircut</p>
+                <p>from 300 uah.</p>
+              </li>
+              <li class="service-list-item">
+                <p>Men`s haircut</p>
+                <p>from 300 uah.</p>
+              </li>
+              <li class="service-list-item">
+                <p>Men`s haircut</p>
+                <p>from 300 uah.</p>
+              </li>
+            </ul>
+            <ul class="service-list list">
+              <li class="service-list-item">
+                <p>Men`s haircut</p>
+                <p>from 50 uah.</p>
+              </li>
+              <li class="service-list-item">
+                <p>Men`s haircut</p>
+                <p>from 50 uah.</p>
+              </li>
+              <li class="service-list-item">
+                <p>Men`s haircut</p>
+                <p>from 50 uah.</p>
+              </li>
+              <li class="service-list-item">
+                <p>Men`s haircut</p>
+                <p>from 50 uah.</p>
+              </li>
+            </ul>
+          </div>
           <button class="service-btn btn" type="button">Online-booking</button>
         </div>
       </section>
@@ -223,42 +232,46 @@
       </section>
 
       <section class="gallery">
-        <h2 class="gallery-title visually-hidden">Gallery</h2>
-        <p class="gallery-text-top text-top">In Latin, "barba" means "beard"</p>
-        <ul class="gallery-list list">
-          <li class="gallery-list-item">
-            <img
-              src="./img/gallery-1.jpg"
-              width="270"
-              height="360"
-              alt="gallery 1"
-            />
-          </li>
-          <li class="gallery-list-item">
-            <img
-              src="./img/gallery-1.jpg"
-              width="270"
-              height="360"
-              alt="gallery 1"
-            />
-          </li>
-          <li class="gallery-list-item">
-            <img
-              src="./img/gallery-1.jpg"
-              width="270"
-              height="360"
-              alt="gallery 1"
-            />
-          </li>
-          <li class="gallery-list-item">
-            <img
-              src="./img/gallery-1.jpg"
-              width="270"
-              height="360"
-              alt="gallery 1"
-            />
-          </li>
-        </ul>
+        <div class="container">
+          <h2 class="gallery-title visually-hidden">Gallery</h2>
+          <p class="gallery-text-top text-top">
+            In Latin, "barba" means "beard"
+          </p>
+          <ul class="gallery-list list">
+            <li class="gallery-list-item">
+              <img
+                src="./img/gallery-1.jpg"
+                width="270"
+                height="360"
+                alt="gallery 1"
+              />
+            </li>
+            <li class="gallery-list-item">
+              <img
+                src="./img/gallery-1.jpg"
+                width="270"
+                height="360"
+                alt="gallery 1"
+              />
+            </li>
+            <li class="gallery-list-item">
+              <img
+                src="./img/gallery-1.jpg"
+                width="270"
+                height="360"
+                alt="gallery 1"
+              />
+            </li>
+            <li class="gallery-list-item">
+              <img
+                src="./img/gallery-1.jpg"
+                width="270"
+                height="360"
+                alt="gallery 1"
+              />
+            </li>
+          </ul>
+        </div>
       </section>
 
       <section class="booking">
