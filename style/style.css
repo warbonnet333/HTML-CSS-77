@@ -401,6 +401,8 @@ body {
   margin-bottom: 44px;
 }
 .barbers-list {
+  display: flex;
+  grid-gap: 30px;
 }
 .barbers-card {
 }
