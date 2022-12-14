@@ -1,0 +1,74 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.parent {
+  padding: 10px;
+  width: 500px;
+  margin: 0 auto;
+  background-color: gainsboro;
+  display: flex;
+}
+
+.parent::before {
+  content: "tooltip before";
+  background-color: green;
+  /* width: 10px; */
+  /* height: 10px; */
+  display: block;
+}
+
+.parent::after {
+  background-color: red;
+  /* width: 10px; */
+  /* height: 10px; */
+  display: block;
+}
+
+/* .box {
+  width: 200px;
+  height: 200px;
+  margin: 30px auto;
+  background-color: tomato;
+  padding: 20px;
+  transition: all 0.3s ease;
+  box-shadow: 0px 0px 0px 0px blue, 0px 0px 0px 0px pink;
+}
+
+.box:hover {
+  box-shadow: 10px 10px 0px 0px blue, 20px 20px 0px 0px pink;
+}
+
+.text {
+  margin: 0 auto;
+  text-align: center;
+  text-shadow: 3px 3px red;
+  color: transparent;
+} */
+
+/* img,
+svg {
+  width: 200px;
+  height: 200px;
+}
+
+.icon-bg {
+  width: 200px;
+  height: 200px;
+  background-image: url("../img/test-icon.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+svg:hover {
+  fill: red;
+}
+
+img:hover {
+  fill: red;
+} */
